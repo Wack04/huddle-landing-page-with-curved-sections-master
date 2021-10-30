@@ -1,0 +1,16 @@
+{
+  "name": "hurddle-landing-page",
+  "version": "1.0.0",
+  "description": "Front End Mentor Herddle Landing Page Project",
+  "main": "index.js",
+  "scripts": {
+    "compile": "parcel index.html",
+    "build": "build index.html"
+  },
+  "author": "Akira Yagi",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.43.4"
+  }
+}
