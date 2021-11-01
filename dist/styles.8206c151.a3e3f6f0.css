@@ -1,0 +1,29 @@
+h1 {
+  font-size: 2rem;
+  color: $;
+}
+
+img {
+  width: 50vh;
+}
+
+img > .features {
+  width: 6vh;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+
+
+
+/*# sourceMappingURL=/styles.8206c151.a3e3f6f0.css.map */

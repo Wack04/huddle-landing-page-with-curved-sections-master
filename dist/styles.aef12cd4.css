@@ -1,0 +1,45 @@
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.h1,
+.h2--dark,
+.h3--dark {
+  color: #00252e;
+}
+
+.h1,
+.h2,
+.h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.para {
+  font-family: "Open Sans", sans-serif;
+}
+
+.para--dark {
+  color: #00252e;
+}
+
+.para--light {
+  color: #bdbdbd;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+
+/*# sourceMappingURL=/styles.aef12cd4.css.map */

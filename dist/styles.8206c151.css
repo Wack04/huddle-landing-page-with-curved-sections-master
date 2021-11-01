@@ -1,6 +1,14 @@
 h1 {
   font-size: 2rem;
+  text-align: center;
+}
+
+h1,
+.h2--dark,
+.h3--dark {
   color: #00252e;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
 }
 
 *,

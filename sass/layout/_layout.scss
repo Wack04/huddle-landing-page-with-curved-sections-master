@@ -1,2 +1,10 @@
 @import "./navbar";
 @import "./hero";
+@import "./stats";
+@import "./features";
+@import "./footer";
+main,
+section {
+  text-align: center;
+  margin: 0 auto;
+}

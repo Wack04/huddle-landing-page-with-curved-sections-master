@@ -4,56 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- displays site properly based on user's device -->
-
-    <link rel="stylesheet" href="/styles.8206c151.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.aef12cd4.css">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.a89af6ed.png">
 
     <title>Frontend Mentor | Huddle landing page with curved sections</title>
-  <script src="/styles.8206c151.js"></script></head>
+  <script src="/styles.aef12cd4.js"></script></head>
   <body>
     <!-- Navigation -->
-    <nav>
-      <img src="/logo.236e4034.svg" alt="logo">
-      <a href="javascript:void;">Try it free</a>
+    <nav class="navbar">
+      <img class="navbar__logo" src="/logo.236e4034.svg" alt="logo">
+      <a class="btn btn--round btn--sm btn--outline" href="javascript:void;">Try it free</a>
     </nav>
-    <!-- Hero Section -->
-    <main>
-      <h1>Build The Community Your Fans Will Love</h1>
-      <p>
-        re-imagines the way we build communities. You have a voice, but so does
-        your audience. Create connections with your users as you engage in
-        genuine discussion.
+    <!-- Banner Section -->
+    <main class="banner">
+      <h1 class="h1 h1--dark">Build The Community Your Fans Will Love</h1>
+      <p class="para para--md para--dark">
+        Huddle re-imagines the way we build communities. You have a voice, but
+        so does your audience. Create connections with your users as you engage
+        in genuine discussion.
       </p>
-      <a>Get Started For </a>
-      <img src="/screen-mockups.5b88d862.svg" alt="">
+      <a class="btn btn--round btn--bg btn--fill">Get Started For </a>
+      <img class="banner__img" src="/screen-mockups.5b88d862.svg" alt="">
     </main>
     <!-- Stats Sections -->
-    <section>
-      <img src="/icon-communities.84cd8894.svg" alt="">
-      <h2>1.4k+</h2>
-      <img src="/icon-messages.d3be2dfc.svg" alt="">
-      <p>Communities Formed</p>
-      <h2>2.7m+</h2>
-      <p>Messages Sent</p>
+    <section class="stats">
+      <img class="stats__img stats__img--mini" src="/icon-communities.84cd8894.svg" alt="">
+      <h2 class="h2 h2--big h2--dark">1.4k+</h2>
+      <p class="para para--sm para--light">Communities Formed</p>
+      <img class="stats__img stats__img--mini" src="/icon-messages.d3be2dfc.svg" alt="">
+      <h2 class="h2 h2--big h2--dark">2.7m+</h2>
+      <p class="para para--sm para--light">Messages Sent</p>
     </section>
     <!-- Featues Section -->
-    <section>
-      <img src="/illustration-grow-together.e1fa8990.svg" alt="">
-      <h3>Grow Together</h3>
-      <p>
+    <section class="features">
+      <img class="features__img" src="/illustration-grow-together.e1fa8990.svg" alt="">
+      <h3 class="h3 h3--md h3--dark">Grow Together</h3>
+      <p class="para para--md para--dark">
         Generate meaningful discussions with your audience and build a strong,
         loyal community. Think of the insightful conversations you miss out on
         with a feedback form.
       </p>
       <img src="/illustration-flowing-conversation.918710dc.svg" alt="">
-      <h3>Flowing Conversations</h3>
-      <p>
+      <h3 class="h3 h3--md h3--dark">Flowing Conversations</h3>
+      <p class="para para--md para--dark">
         You wouldn't paginate a conversation in real life, so why do it online?
         Our threads have just-in-time loading for a more natural flow.
       </p>
       <img src="/illustration-your-users.e7233fb1.svg" alt="">
-      <h3>Your Users</h3>
-      <p>
+      <h3 class="h3 h3--md h3--dark">Your Users</h3>
+      <p class="para para--md para--dark">
         It takes no time at all to integrate Huddle with your app's
         authentication solution. This means, once signed in to your app, your
         users can start chatting immediately.
@@ -61,32 +63,32 @@
     </section>
     <!-- CTA Section -->
     <section>
-      <h3>Ready To Build Your Community?</h3>
-      <a>Get Started For Free</a>
+      <h3 class="h3 h3--bg h3--dark">Ready To Build Your Community?</h3>
+      <a class="btn btn--round btn--bg btn--fill" href="#">Get Started For Free</a>
     </section>
 
     <footer>
-      <h3>Newsletter</h3>
-      <p>
+      <h3 class="h3 h3-md h3--white">Newsletter</h3>
+      <p class="para para--md para--white">
         To recieve tips on how to grow your community, sign up to our weekly
         newsletter. We’ll never send you spam or pass on your email address
       </p>
       <form action="">
         <input type="text">
       </form>
-      <button>Subscribe</button>
+      <button class="btn btn--square btn-md btn--fill">Subscribe</button>
       <div>
         <img src="/logo.236e4034.svg" alt="logo">
-        <p>
+        <p class="para para--md para--white">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dicta
           odio repudiandae exercitationem vitae accusantium aut, cum dolore.
         </p>
       </div>
       <address>
         <img src="/icon-phone.cc84a2ca.svg" alt="">
-        <span>Phone:</span><a href="#">+1-543-123-4567</a>
+        <p class="para para--sm para--white">Phone:+1-543-123-4567</p>
         <img src="/icon-email.e16cbdce.svg" alt="">
-        <a href="#">example@huddle.com</a>
+        <p>example@huddle.com</p>
       </address>
       <img src="#" alt="Social Media">
     </footer>

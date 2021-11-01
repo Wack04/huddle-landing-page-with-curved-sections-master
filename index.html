@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
-    <link rel="stylesheet" href="./sass/styles.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/styles.css" />
     <link
       rel="icon"
       type="image/png"
@@ -17,83 +22,141 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav>
-      <img src="./images/logo.svg" alt="logo" />
-      <a href="javascript:void;">Try it free</a>
-    </nav>
-    <!-- Hero Section -->
-    <main>
-      <h1>Build The Community Your Fans Will Love</h1>
-      <p>
-        re-imagines the way we build communities. You have a voice, but so does
-        your audience. Create connections with your users as you engage in
-        genuine discussion.
-      </p>
-      <a>Get Started For </a>
-      <img src="./images/screen-mockups.svg" alt="" />
-    </main>
-    <!-- Stats Sections -->
-    <section>
-      <img src="./images/icon-communities.svg" alt="" />
-      <h2>1.4k+</h2>
-      <img src="./images/icon-messages.svg" alt="" />
-      <p>Communities Formed</p>
-      <h2>2.7m+</h2>
-      <p>Messages Sent</p>
-    </section>
-    <!-- Featues Section -->
-    <section>
-      <img src="./images/illustration-grow-together.svg" alt="" />
-      <h3>Grow Together</h3>
-      <p>
-        Generate meaningful discussions with your audience and build a strong,
-        loyal community. Think of the insightful conversations you miss out on
-        with a feedback form.
-      </p>
-      <img src="./images/illustration-flowing-conversation.svg" alt="" />
-      <h3>Flowing Conversations</h3>
-      <p>
-        You wouldn't paginate a conversation in real life, so why do it online?
-        Our threads have just-in-time loading for a more natural flow.
-      </p>
-      <img src="./images/illustration-your-users.svg" alt="" />
-      <h3>Your Users</h3>
-      <p>
-        It takes no time at all to integrate Huddle with your app's
-        authentication solution. This means, once signed in to your app, your
-        users can start chatting immediately.
-      </p>
-    </section>
-    <!-- CTA Section -->
-    <section>
-      <h3>Ready To Build Your Community?</h3>
-      <a>Get Started For Free</a>
-    </section>
+    <div class="u-margin-bottom-bg">
+      <nav class="navbar">
+        <img class="navbar__logo" src="./images/logo.svg" alt="logo" />
+        <a class="btn btn--round btn--sm btn--outline" href="javascript:void;"
+          >Try it free</a
+        >
+      </nav>
+    </div>
+    <!-- Banner Section -->
 
-    <footer>
-      <h3>Newsletter</h3>
-      <p>
+    <div class="u-margin-bottom-section">
+      <main class="hero">
+        <h1 class="h1 h1--dark">Build The Community Your Fans Will Love</h1>
+        <p class="para para--md para--dark">
+          Huddle re-imagines the way we build communities. You have a voice, but
+          so does your audience. Create connections with your users as you
+          engage in genuine discussion.
+        </p>
+        <a href="#" class="btn btn--round btn--bg btn--fill"
+          >Get Started for Free</a
+        >
+        <img src="./images/screen-mockups.svg" alt="hero img" />
+      </main>
+    </div>
+    <!-- Stats Sections -->
+    <div class="u-margin-bottom-section">
+      <section class="stats">
+        <div class="stats__component">
+          <img
+            class="stats__img stats__img--mini"
+            src="./images/icon-communities.svg"
+            alt=""
+          />
+          <h2 class="h2 h2--big h2--dark">1.4k+</h2>
+          <p class="para para--sm para--light">Communities Formed</p>
+        </div>
+        <div class="stats__component">
+          <img
+            class="stats__img stats__img--mini"
+            src="./images/icon-messages.svg"
+            alt=""
+          />
+          <h2 class="h2 h2--big h2--dark">2.7m+</h2>
+          <p class="para para--sm para--light">Messages Sent</p>
+        </div>
+      </section>
+    </div>
+    <!-- Featues Section -->
+    <div class="u-margin-bottom-section">
+      <section class="features">
+        <div class="features__component">
+          <img
+            class="features__img"
+            src="./images/illustration-grow-together.svg"
+            alt=""
+          />
+          <h3 class="h3 h3--md h3--dark">Grow Together</h3>
+          <p class="para para--md para--dark">
+            Generate meaningful discussions with your audience and build a
+            strong, loyal community. Think of the insightful conversations you
+            miss out on with a feedback form.
+          </p>
+        </div>
+        <div class="features__component">
+          <img
+            class="features__img"
+            src="./images/illustration-flowing-conversation.svg"
+            alt=""
+          />
+          <h3 class="h3 h3--md h3--dark">Flowing Conversations</h3>
+          <p class="para para--md para--dark">
+            You wouldn't paginate a conversation in real life, so why do it
+            online? Our threads have just-in-time loading for a more natural
+            flow.
+          </p>
+        </div>
+        <div class="features__component">
+          <img
+            class="features__img"
+            src="./images/illustration-your-users.svg"
+            alt=""
+          />
+          <h3 class="h3 h3--md h3--dark">Your Users</h3>
+          <p class="para para--md para--dark">
+            It takes no time at all to integrate Huddle with your app's
+            authentication solution. This means, once signed in to your app,
+            your users can start chatting immediately.
+          </p>
+        </div>
+      </section>
+    </div>
+    <!-- CTA Section -->
+    <div class="margin-bottom-section">
+      <section>
+        <h3 class="h3 h3--bg h3--dark">Ready To Build Your Community?</h3>
+        <a class="btn btn--round btn--bg btn--fill" href="#"
+          >Get Started For Free</a
+        >
+      </section>
+    </div>
+
+    <img
+      class="footer__top-img"
+      src="./images/bg-footer-top-mobile.svg"
+      alt=""
+    />
+    <footer class="footer">
+      <h3 class="h3 h3-md h3--white">Newsletter</h3>
+      <p class="para para--md para--white">
         To recieve tips on how to grow your community, sign up to our weekly
         newsletter. We’ll never send you spam or pass on your email address
       </p>
-      <form action="">
-        <input type="text" />
-      </form>
-      <button>Subscribe</button>
+      <div class="footer__sign-up">
+        <form action="">
+          <input type="text" />
+        </form>
+        <button class="btn btn--square btn-md btn--fill">Subscribe</button>
+      </div>
       <div>
-        <img src="./images/logo.svg" alt="logo" />
-        <p>
+        <img class="footer__logo" src="./images/logo.svg" alt="" />
+        <p class="para para--md para--white">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dicta
           odio repudiandae exercitationem vitae accusantium aut, cum dolore.
         </p>
       </div>
-      <address>
-        <img src="./images/icon-phone.svg" alt="" />
-        <span>Phone:</span><a href="#">+1-543-123-4567</a>
-        <img src="./images/icon-email.svg" alt="" />
-        <a href="#">example@huddle.com</a>
+      <address class="address">
+        <div class="address__component">
+          <img class="address__img" src="./images/icon-phone.svg" alt="" />
+          <p class="para para--sm para--white">Phone:+1-543-123-4567</p>
+        </div>
+        <div class="address__component">
+          <img class="address__img" src="./images/icon-email.svg" alt="" />
+          <p>example@huddle.com</p>
+        </div>
       </address>
-      <img src="#" alt="Social Media" />
     </footer>
   </body>
 </html>

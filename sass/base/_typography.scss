@@ -1,4 +1,69 @@
-h1 {
-  font-size: 2rem;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Poppins', sans-serif;
+// font-sizes: Open Sans - 400 600 700
+// font-sizes: Poppins - 700
+
+.h1 {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+.h1,
+.para {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 80%;
+}
+
+.h2 {
+  font-size: 2.4rem;
+}
+.h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+.h3--bg {
+  font-size: 1.4rem;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.h3--white {
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 1rem;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+}
+.h1,
+.h2--dark,
+.h3--dark {
   color: $Very-Dark-Cyan;
+}
+.h1,
+.h2,
+.h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.para {
+  font-family: "Open Sans", sans-serif;
+  &:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+}
+.para--dark {
+  color: $Very-Dark-Cyan;
+}
+.para--light {
+  font-size: 0.6rem;
+  color: $light-grey;
+}
+
+// For Mobiles
+.h1,
+.h2,
+.h3,
+.h4,
+.para {
+  text-align: center;
 }

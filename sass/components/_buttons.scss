@@ -1,0 +1,50 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    cursor: pointer;
+  }
+  &--round:not(.btn--outline) {
+    box-shadow: 0 2px 8px rgba(122, 122, 122, 0.7);
+  }
+  &--round {
+    border-radius: 2.2rem;
+  }
+  &--sm {
+    font-size: 0.6rem;
+    padding: 0.2rem 1rem;
+  }
+  &--bg {
+    font-size: 0.8rem;
+  }
+  &--fill {
+    background: $Pink;
+    color: $Very-Pale-Blue;
+    padding: 0.7rem 2.6rem;
+    margin-bottom: 4rem;
+    &:hover {
+      background: lighten($Pink, 6%);
+    }
+  }
+  &--outline {
+    border: 1.4px solid $Pink;
+    color: $Pink;
+    &:hover {
+      background: $Pink;
+      color: $Very-Pale-Blue;
+    }
+  }
+}
+
+.btn--square {
+  font-size: 0.7rem;
+  padding: 0.5 2.6;
+  outline: 0;
+  border: 0;
+  border-radius: 0.2rem;
+}
